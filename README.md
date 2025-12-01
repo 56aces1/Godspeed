@@ -18,6 +18,12 @@ npm run dev
 
 If npm install is blocked in your environment, add `@supabase/supabase-js` manually in your lockfile or install when network access is available.
 
+## Understanding repo diffs
+- Green lines prefixed with `+` are additions introduced in a commit or pull request.
+- Red lines prefixed with `-` are removals compared to the previous version.
+- Mixed blocks show context so you can see which code around the changes stayed the same.
+- File headers (e.g., `@@ -10,6 +10,8 @@`) indicate the line ranges before and after the change to help you locate the edits.
+
 ## Deployment (Vercel + Supabase)
 1. Create a Supabase project and apply `db/schema.sql` plus `supabase/functions/increment_xp.sql`.
 2. Add environment variables in Vercel: `NEXT_PUBLIC_SUPABASE_URL`, `NEXT_PUBLIC_SUPABASE_ANON_KEY`.
